@@ -1,0 +1,6 @@
+{
+  "default": {
+    "path": ["src/test/features"],
+    "dryRun": false
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "cucumberTypeScript",
+  "scripts": {
+    "test": "cucumber-js test"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@playwright/test": "^1.47.2",
+    "@types/node": "^22.7.4",
+    "cucumber": "^6.0.7"
+  },
+  "dependencies": {
+    "playwright": "^1.47.2",
+    "typescript": "^5.6.2"
+  }
+}
