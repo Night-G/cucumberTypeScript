@@ -1,6 +1,6 @@
 
 import {Page, Browser} from "playwright";
-import {Given} from "cucumber";
+import {Given, When,Then} from "@cucumber/cucumber";
 
 let browser: Browser;
 let page: Page;
@@ -28,7 +28,7 @@ When('User click on the login button', async function () {
 
 
 Then('Login should be successful', async function (username:string) {
-    const userNameLabel:string = await page.locator("//label[text()='"+username+"']")
+    const userNameLabel = await page.locator("//label[text()='"+username+"']").textContent();
     console.log("username: "+userNameLabel);
 
     await browser.close();

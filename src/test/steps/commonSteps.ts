@@ -1,11 +1,12 @@
-import {Given} from "cucumber";
 import {Browser, chromium, Page} from "playwright";
+
+import {Given} from "@cucumber/cucumber";
 
 
 let browser: Browser;
 let page: Page;
 
-Given(/^User goes to the site`s main page$/,  async function () {
+Given('User goes to the site`s main page',  async function () {
     browser = await chromium.launch({headless: true});
     page = await browser.newPage();
     await page.goto('https://demoqa.com/');
